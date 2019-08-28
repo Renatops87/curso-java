@@ -26,7 +26,7 @@ public class Program {
 				Employees f = listEmployees.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 				if (f != null) {
 					System.out.println();
-					System.out.println("Id já cadastrado!!");
+					System.out.println("Invalid ID");
 					System.out.println();
 					i -= 1;
 					continue;
@@ -58,7 +58,7 @@ public class Program {
 				System.out.println(x.toString());
 			}	
 		} else {
-			System.out.print("Id inexistente!!");
+			System.out.print("ID Not Found!");
 		}
 		
 		scan.close();
